@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 900;      
+}
+
+
+/**HEADER**/
+#header-nav{
+    background-color: grey ;
+    border-radius: 0;
+    border: 4px solid black;
+}
+
+.navbar-brand{
+    padding-top: 5px;
+}
+
+.container .navbar-header{
+    justify-content: space-between;
+}
+
+
+.navbar-brand h1{
+    color: black;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus{
+    text-decoration: none;
+}
+
+
+
+
+/**Body**/
+
+section {
+    background-color: grey;
+    
+}
+
+section h5{
+    font-weight: 900;
+    margin-top: 20px;
+}
+
+h3{
+    font-weight: bold;
+}
+
+
+
+.navbar-toggle{
+    position: relative;
+    float: right;
+    padding: 4px;
+    margin-top: 5px;
+    margin-right: 15px;
+    background-color: transparent;
+    background-image: none;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.navbar-toggle:focus{
+    outline: 0;
+}
+
+.navbar-toggle .icon-bar{
+    display: block;
+    width: 25px;
+    height: 5px;
+    background-color: black;
+}
+
+.navbar-toggle:hover span{
+    background-color: white;
+}
+
+.navbar-toggle:hover{
+    border-color: white;
+}
+
+
+.navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 4px;
+}
+
+
+.navbar-nav{
+    margin: 7.5px -15px;
+}
+
+.navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+
+#nav-list{
+    margin-top: 10px;
+    background-color: white;
+}
+
+.navbar-collapse{
+    width: 80vw;
+}
+
+.navbar-collapse li{
+    text-align: center;
+    border: 2px solid;
+}
+
+@media (min-width: 768px){
+    .navbar-toggle{
+        display: none;
+    }
+
+    .navbar > .container .navbar-brand,
+    .navbar > .container-fluid .navbar-brand{
+        margin-left: -15px;
+    }
+
+}
